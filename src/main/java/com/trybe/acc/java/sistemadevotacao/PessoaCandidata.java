@@ -1,4 +1,4 @@
-package main.java.com.trybe.acc.java.sistemadevotacao;
+package com.trybe.acc.java.sistemadevotacao;
 
 public class PessoaCandidata extends Pessoa {
   private int numero;

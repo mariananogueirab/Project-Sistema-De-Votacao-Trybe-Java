@@ -1,4 +1,4 @@
-package main.java.com.trybe.acc.java.sistemadevotacao;
+package com.trybe.acc.java.sistemadevotacao;
 
 import java.util.Scanner;
 
@@ -8,11 +8,13 @@ public class Principal {
    * Main.
    */
   public static void main(String[] args) {
+    GerenciamentoVotacao gerenciamento = new GerenciamentoVotacao();
+    Scanner scanner = new Scanner(System.in);
+
     short opcaoCandidata;
     short opcaoEleitora;
     short opcaoVotacao;
-    Scanner scanner = new Scanner(System.in);
-    GerenciamentoVotacao gerenciamento = new GerenciamentoVotacao();
+
     do {
       System.out.println("Cadastrar pessoa candidata?");
       System.out.println("1 - Sim");

@@ -16,9 +16,11 @@ public class GerenciamentoVotacao {
    * Construtor.
    */
 
-  public GerenciamentoVotacao() {};
+  public GerenciamentoVotacao() {}
 
-  // métodos
+  /**
+   * Método cadastrarPessoaCandidata.
+   */
   public void cadastrarPessoaCandidata(String nome, int numero) {
     Boolean containNumber = false;
     // referencia stackoverflow:
@@ -35,6 +37,9 @@ public class GerenciamentoVotacao {
     }
   }
 
+  /**
+   * Método cadastrarPessoaEleitora.
+   */
   public void cadastrarPessoaEleitora(String nome, String cpf) {
     Boolean containCpf = false;
     // referencia stackoverflow: percorrer arrai de objetos
@@ -51,6 +56,9 @@ public class GerenciamentoVotacao {
     }
   }
 
+  /**
+   * Método votar.
+   */
   public void votar(String cpfPessoaEleitora, int numeroPessoaCandidata) {
     Boolean containCpfEleitor = cpfComputado.contains(cpfPessoaEleitora);
 
@@ -67,12 +75,18 @@ public class GerenciamentoVotacao {
     }
   }
 
+  /**
+   * Método calcularPorcentagemVotos.
+   */
   private Double calcularPorcentagemVotos(int indice) {
     int votos = this.pessoasCandidatas.get(indice).getVotos();
     Double votosEmPorcentagem = (votos * 100.0) / totalVotos;
     return votosEmPorcentagem;
   }
 
+  /**
+   * Método mostrarResultado.
+   */
   public void mostrarResultado() {
     if (totalVotos <= 0) {
       System.out.println("É preciso ter pelo menos um voto para mostrar o resultado.");

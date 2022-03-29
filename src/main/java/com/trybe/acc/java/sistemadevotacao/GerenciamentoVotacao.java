@@ -47,9 +47,7 @@ public class GerenciamentoVotacao {
       if (pessoaEleitora.getCpf() == cpf) {
         System.out.println("Pessoa eleitora já cadastrada!");
         containCpf = true;
-      }
-
-      else {
+      } else {
         containCpf = false;
       }
     }

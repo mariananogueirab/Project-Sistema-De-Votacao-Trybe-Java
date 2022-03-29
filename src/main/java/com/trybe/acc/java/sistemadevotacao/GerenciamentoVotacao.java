@@ -41,12 +41,16 @@ public class GerenciamentoVotacao {
    * Método cadastrarPessoaEleitora.
    */
   public void cadastrarPessoaEleitora(String nome, String cpf) {
-    Boolean containCpf = false;
+    Boolean containCpf = true;
     // referencia stackoverflow: percorrer arrai de objetos
     for (PessoaEleitora pessoaEleitora : pessoasEleitoras) {
       if (pessoaEleitora.getCpf() == cpf) {
         System.out.println("Pessoa eleitora já cadastrada!");
         containCpf = true;
+      }
+
+      else {
+        containCpf = false;
       }
     }
 

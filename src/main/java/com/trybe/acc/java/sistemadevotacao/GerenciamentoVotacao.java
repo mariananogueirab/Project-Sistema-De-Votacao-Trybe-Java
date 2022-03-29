@@ -44,7 +44,7 @@ public class GerenciamentoVotacao {
     Boolean containCpf = true;
     // referencia stackoverflow: percorrer arrai de objetos
     for (PessoaEleitora pessoaEleitora : pessoasEleitoras) {
-      if (pessoaEleitora.getCpf() == cpf) {
+      if (pessoaEleitora.getCpf().equals(cpf)) {
         System.out.println("Pessoa eleitora já cadastrada!");
         containCpf = true;
       } else {

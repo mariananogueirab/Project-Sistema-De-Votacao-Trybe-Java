@@ -1,4 +1,4 @@
-package com.trybe.acc.java.sistemadevotacao;
+package main.java.com.trybe.acc.java.sistemadevotacao;
 
 public abstract class Pessoa {
   protected String nome;
